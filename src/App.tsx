@@ -1,5 +1,5 @@
 // src/App.tsx
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Typewriter } from "react-simple-typewriter";
 
 import Sidebar from "./components/Sidebar";
@@ -17,7 +17,6 @@ function Resume() {
       <h2 className="text-2xl font-bold mb-4 border-b border-pink-600 w-fit">
         <Typewriter
           words={["My Resume"]}
-        
           loop={1}
           typeSpeed={80}
           deleteSpeed={50}
@@ -113,7 +112,6 @@ function HomePage() {
 }
 
 function AppLayout() {
-  
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#1c0430] to-[#0f0f1d] text-white p-6">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-6">
