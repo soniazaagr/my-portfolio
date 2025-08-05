@@ -7,9 +7,6 @@ import {
   FaLinkedin,
   FaGithub,
   FaTwitter,
-  FaCode,
-  FaFigma,
-  FaReact,
   FaSun,
   FaMoon,
 } from "react-icons/fa";
@@ -54,12 +51,10 @@ export default function Sidebar() {
       {/* Skills Progress */}
       <div className="w-full text-sm">
         <p className="font-semibold mb-2 text-white dark:text-black">Technical Skills</p>
-        {[
-          { name: "React", level: "w-[90%]" },
+        {[{ name: "React", level: "w-[90%]" },
           { name: "TypeScript", level: "w-[85%]" },
           { name: "Tailwind CSS", level: "w-[80%]" },
-          { name: "Figma", level: "w-[75%]" },
-        ].map((skill) => (
+          { name: "Figma", level: "w-[75%]" }].map((skill) => (
           <div key={skill.name} className="mb-3">
             <div className="flex justify-between text-xs mb-1">
               <span>{skill.name}</span>
